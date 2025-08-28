@@ -27,15 +27,15 @@ const Projects = () => {
       title: "Todo App",
       description: "Feature-rich todo application with categories, due dates, drag-and-drop ordering and local sync for offline use.",
       technologies: ["React", "Redux", "Tailwind CSS", "LocalStorage"],
-      githubLink: "#",
-      liveDemo: "#"
+      githubLink: "https://github.com/Aryanraghuvanshi/todo-app1",
+      liveDemo: "https://todo-app1-kappa.vercel.app/"
     },
     {
       title: "AI Chat Bot",
       description: "Conversational AI chatbot with context-aware responses, message streaming, and optional OpenAI integration for advanced NLU.",
       technologies: ["React", "Node.js", "OpenAI API", "WebSockets"],
-      githubLink: "#",
-      liveDemo: "#"
+      githubLink: "https://github.com/Aryanraghuvanshi/talkme-bot1",
+      liveDemo: "https://talkme-bot1.vercel.app/"
     }
   ];
 
@@ -64,13 +64,13 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex justify-between">
-                  <a href={project.githubLink} className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                  <a href={project.githubLink} target='_blank' className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
                     Code
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                     </svg>
                   </a>
-                  <a href={project.liveDemo} className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                  <a href={project.liveDemo} target='_blank' className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
                     Live Demo
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
